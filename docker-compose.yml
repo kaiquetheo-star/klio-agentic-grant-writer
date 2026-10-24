@@ -1,0 +1,14 @@
+# Optional local stack — no external Postgres / Redis / VPN.
+services:
+  reasoning_engine:
+    build: .
+    ports:
+      - "8002:8002"
+    environment:
+      SAMPLE_MODE: "true"
+      REASONING_ENGINE_ENABLED: "true"
+      REASONING_ENGINE_MEMORY_BACKEND: "memory"
+      DJANGO_SECRET_KEY: "submission-compose-dev-only"
+      DATABASE_URL: "sqlite:////tmp/klio-reasoning-submission.sqlite3"
+      ALLOWED_HOSTS: "*"
+      DEBUG: "true"

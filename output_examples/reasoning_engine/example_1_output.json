@@ -1,0 +1,67 @@
+{
+  "run_id": "579aeae6-541d-4413-8455-121b14e14cfa",
+  "status": "success",
+  "mode": "sample",
+  "output": {
+    "draft": "[SAMPLE_MODE] Dados sintéticos para julgamento do Open Agent Hackathon 2026. Não são editais reais da Klio / radar de produção.\n\n# Rascunho de inscrição (sample) — [SAMPLE] Edital genérico (sample-grant-teatro-sp)\n\nIdioma: português do Brasil\n\n## Proponente\nSinais do portfólio (Coletivo, teatro, atuação, circulação, cidades, interior).\nColetivo de teatro de rua com 5 anos de atuação, circulação em 12 cidades do interior de SP, oficinas comunitárias para jovens em situação de vulnerabilidade social, acessibilidade com audiodescrição e LIBRAS.\n\n## Atendimento aos requisitos do edital\n- Descrição do projeto artístico\n- Currículo / portfólio da organização\n- Orçamento simplificado\n\n## Proposta\nPropomos um plano de circulação alinhado aos critérios deste edital sample, com acessibilidade (audiodescrição ou LIBRAS), circulação em no mínimo 3 municípios, orçamento detalhado e cronograma de 6 meses, amarrados à trajetória descrita (Coletivo, teatro, atuação, circulação, cidades, interior).\n\n\n## Ajustes desta revisão (1)\nResposta à crítica: [SAMPLE] Revisar: explicitar acessibilidade/contrapartida e quantificar municípios de circulação. Reforçar vínculo com o portfólio.\nIncorporamos: acessibilidade (audiodescrição/LIBRAS), quantificação de municípios de circulação (mínimo 3), vínculo explícito com o portfólio (Coletivo, teatro, atuação, circulação, cidades, interior), orçamento e cronograma de 6 meses.\n\n\n## Evidências do portfólio\nColetivo de teatro de rua com 5 anos de atuação, circulação em 12 cidades do interior de SP, oficinas comunitárias para jovens em situação de vulnerabilidade social, acessibilidade com audiodescrição e LIBRAS.\n\nÂngulos priorizados: coletivo, teatro, atuação, circulação.\nFingerprint sample: dff31e1b.\n\n[SAMPLE_MODE] Texto sintético apenas para julgamento do hackathon.\n",
+    "score": 9.5,
+    "critique": "[SAMPLE] Texto cobre os requisitos principais com clareza adequada.",
+    "revisions": 1,
+    "language": "pt-BR"
+  },
+  "agents": [
+    {
+      "name": "Planner",
+      "role": "Analisa o edital e o portfólio; define seções, ângulos e critérios a cobrir."
+    },
+    {
+      "name": "Writer",
+      "role": "Redige o rascunho de inscrição alinhado ao plano e ao portfólio."
+    },
+    {
+      "name": "Evaluator",
+      "role": "Pontua o rascunho (0–10), critica lacunas e solicita revisão se necessário."
+    }
+  ],
+  "trace_id": "579aeae6-541d-4413-8455-121b14e14cfa",
+  "log_file": "logs/trace-579aeae6-541d-4413-8455-121b14e14cfa.jsonl",
+  "execution_time_seconds": 0.005,
+  "iterations": [
+    {
+      "agent": "Planner",
+      "action": "plan",
+      "timestamp": "2026-10-22T15:35:29.964528+00:00",
+      "output_summary": "['apresentacao_proponente', 'objeto_e_justificativa', 'metodologia_e_circulacao', 'acessibilidade_e_impacto', 'cronogra…"
+    },
+    {
+      "agent": "Writer",
+      "action": "draft",
+      "revision": 0,
+      "timestamp": "2026-10-22T15:35:29.966028+00:00",
+      "output_summary": "[SAMPLE_MODE] Dados sintéticos para julgamento do Open Agent Hackathon 2026. Não são editais reais da Klio / radar de produção. # Rascunho de inscrição (sample…"
+    },
+    {
+      "agent": "Evaluator",
+      "action": "evaluate",
+      "score": 6.5,
+      "critique": "[SAMPLE] Revisar: explicitar acessibilidade/contrapartida e quantificar municípios de circulação. Reforçar vínculo com o portfólio.",
+      "timestamp": "2026-10-22T15:35:29.966855+00:00"
+    },
+    {
+      "agent": "Writer",
+      "action": "revise",
+      "revision": 1,
+      "timestamp": "2026-10-22T15:35:29.967195+00:00",
+      "output_summary": "[SAMPLE_MODE] Dados sintéticos para julgamento do Open Agent Hackathon 2026. Não são editais reais da Klio / radar de produção. # Rascunho de inscrição (sample…"
+    },
+    {
+      "agent": "Evaluator",
+      "action": "evaluate",
+      "score": 9.5,
+      "critique": "[SAMPLE] Texto cobre os requisitos principais com clareza adequada.",
+      "timestamp": "2026-10-22T15:35:29.967526+00:00"
+    }
+  ],
+  "sample_mode": true,
+  "provider": "local_sample"
+}
